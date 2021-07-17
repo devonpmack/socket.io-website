@@ -46,17 +46,9 @@ socket.on("details", listener);
 
 // and then later...
 socket.off("details", listener);
-```
 
-### socket.removeAllListeners([eventName])
-
-Removes all listeners, or those of the specified *eventName*.
-
-```js
-// for a specific event
-socket.removeAllListeners("details");
-// for all events
-socket.removeAllListeners();
+// or remove all listeners for the event
+socket.off("details");
 ```
 
 ## Catch-all listeners
